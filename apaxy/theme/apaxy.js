@@ -3,6 +3,16 @@
 (function (document) {
   'use strict'
 
+  document.title = document.title.replace('Index of', '')
+  var elem = document.getElementById('indextitle')
+  elem.innerHTML = elem.innerHTML.replace('Index of', '')
+  elem = document.getElementsByClassName('indexcolname')[0]
+  elem.innerHTML = elem.innerHTML.replace('Name', 'Name')
+  elem = document.getElementsByClassName('indexcollastmod')[0]
+  elem.innerHTML = elem.innerHTML.replace('Last modified', 'Zuletzt geändert')
+  elem = document.getElementsByClassName('indexcolsize')[0]
+  elem.innerHTML = elem.innerHTML.replace('Size', 'Größe')
+
   var TableFilter = (function (Arr) {
     // the search bar element
     var _input
@@ -66,7 +76,7 @@
 var uri = window.location.pathname.substr(1)
 var arr = uri.split('/')
 var url = ''
-var bread = '<li><strong><a href="/">Home</a></strong></li>'
+var bread = '<li><strong><a href="/">Start</a></strong></li>'
 var cont = 1
 arr.forEach(function (value) {
   url = url + '/' + value
