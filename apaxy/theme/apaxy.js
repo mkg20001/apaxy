@@ -1,17 +1,18 @@
 // content filtering, based on "light javascript table filter" by Chris Coyier
 // https://codepen.io/chriscoyier/pen/tIuBL - MIT License
+
+document.title = document.title.replace('Index of', '')
+var elem = document.getElementById('indextitle')
+elem.innerHTML = elem.innerHTML.replace('Index of', '')
+elem = document.getElementsByClassName('indexcolname')[0]
+elem.innerHTML = elem.innerHTML.replace('Name', 'Name')
+elem = document.getElementsByClassName('indexcollastmod')[0]
+elem.innerHTML = elem.innerHTML.replace('Last modified', 'Zuletzt geändert')
+elem = document.getElementsByClassName('indexcolsize')[0]
+elem.innerHTML = elem.innerHTML.replace('Size', 'Größe')
+
 (function (document) {
   'use strict'
-
-  document.title = document.title.replace('Index of', '')
-  var elem = document.getElementById('indextitle')
-  elem.innerHTML = elem.innerHTML.replace('Index of', '')
-  elem = document.getElementsByClassName('indexcolname')[0]
-  elem.innerHTML = elem.innerHTML.replace('Name', 'Name')
-  elem = document.getElementsByClassName('indexcollastmod')[0]
-  elem.innerHTML = elem.innerHTML.replace('Last modified', 'Zuletzt geändert')
-  elem = document.getElementsByClassName('indexcolsize')[0]
-  elem.innerHTML = elem.innerHTML.replace('Size', 'Größe')
 
   var TableFilter = (function (Arr) {
     // the search bar element
