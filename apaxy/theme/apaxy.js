@@ -2,9 +2,7 @@
 // https://codepen.io/chriscoyier/pen/tIuBL - MIT License
 
 document.title = document.title.replace('Index of', '')
-var elem = document.getElementById('indextitle')
-elem.innerHTML = elem.innerHTML.replace('Index of', '')
-elem = document.getElementsByClassName('indexcolname')[0]
+let elem = document.getElementsByClassName('indexcolname')[0]
 elem.innerHTML = elem.innerHTML.replace('Name', 'Name')
 elem = document.getElementsByClassName('indexcollastmod')[0]
 elem.innerHTML = elem.innerHTML.replace('Last modified', 'Zuletzt geändert')
