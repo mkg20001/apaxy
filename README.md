@@ -1,4 +1,6 @@
-# Apaxy
+# Apaxy German
+
+**Translated to German. There's no language picker, so you're better off with upstream if you want english**
 
 apaxy is a customisable theme built to enhance the experience of browsing web directories. It uses the `mod_autoindex` Apache module - and some css - to override the default style of a directory listing.
 
@@ -148,4 +150,3 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
